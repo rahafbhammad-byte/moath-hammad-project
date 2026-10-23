@@ -1,2 +1,14 @@
-/* The legacy hero label is replaced visually until the copy source is fully migrated. */
-.hero-document span{font-size:0}.hero-document span:after{content:'Special Arms';font-size:10px}.hero-document .hero-seal .brand-mark{font-size:initial}html[dir=rtl] .hero-document span:after{content:'سواعد التميز'}
+/* Root-cause fix: the former closed drawer stayed transformed off-canvas,
+   leaving its edge/shadow visible on narrow RTL layouts. It is now unmounted. */
+html, body, #root { max-width: 100%; overflow-x: clip; background: #FBF8F3; }
+html { -webkit-text-size-adjust: 100%; }
+.about-logo { display:grid; place-items:center; width:190px; height:190px; border-radius:50%; background:var(--gold-tint); box-shadow:18px 18px 0 var(--cream); }
+.about-logo .brand-mark { width:145px; height:145px; }
+@media (max-width: 767px) {
+  .mobile-drawer { visibility: visible; overflow-y:auto; padding-bottom:calc(30px + env(safe-area-inset-bottom)); }
+  .hero, .cta, .pain-art, .hero-art { overflow: clip; }
+  .hero h1 { max-width: 20ch; }
+  .hero-document span { font-size:10px; }
+  .about-logo { width:140px; height:140px; }
+  .about-logo .brand-mark { width:104px; height:104px; }
+}

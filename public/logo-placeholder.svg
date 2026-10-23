@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Temporary Special Arms logo placeholder">
+  <rect width="512" height="512" fill="#F1E7DB"/>
+  <circle cx="256" cy="256" r="206" fill="#9E874F" stroke="#D4C9CD" stroke-width="12"/>
+  <path d="M365 143a145 145 0 1 0 0 226" fill="none" stroke="#FBF8F3" stroke-width="28" stroke-linecap="round"/>
+  <path d="M194 319v-76m52 76V191m52 128v-98" fill="none" stroke="#FBF8F3" stroke-width="18" stroke-linecap="round"/>
+  <text x="256" y="397" text-anchor="middle" font-family="Arial, sans-serif" font-size="82" font-weight="700" fill="#FBF8F3">Sa</text>
+</svg>
